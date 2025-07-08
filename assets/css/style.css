@@ -1,0 +1,187 @@
+* {
+    font-family: system-ui;
+}
+
+#logojarditou {
+    width: 300px;
+    margin: auto;
+}
+
+.entete {
+    display: flex;
+    margin: auto;
+}
+
+#labelindex {
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+
+a {
+    color: white;
+}
+.link-accueil:hover{
+    transform: scale(1.1);
+}
+.link {
+    display: flex;
+}
+
+.nav {
+    position: static;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*img promotion jarditou*/
+#cat {
+    width: 100%;
+    height: auto;
+}
+
+#accueil {
+    display: flex;
+
+}
+
+main {
+    display: flex;
+    flex: 2;
+}
+#bloc1{
+    display: block;
+}
+#aside {
+    display: flex;
+    flex: 1;
+    background-color: rgb(182, 179, 179);
+    float: right;
+    margin-bottom: 5px;
+}
+
+.footer {
+    list-style: none;
+    background-color: black;
+}
+
+.fieldset {
+    background-color: rgb(233, 212, 184);
+    font-size: 12pt;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.bloc-coordonnées {
+    display: block;
+    float: left;
+    width: 60%;
+}
+
+.bloc-votre-demande {
+    display: inline;
+    margin-left: 60%;
+}
+
+#btn {
+    margin: 5px;
+    background-color: antiquewhite;
+    flex-direction: row-reverse;
+    margin-left: 50%;
+}
+
+#btn:hover {
+    background-color: rgb(206, 152, 71);
+}
+
+.labelform {
+    font-size: 15pt;
+}
+
+input {
+    margin: 10px;
+}
+
+legend {
+    font-size: 15pt;
+}
+
+button {
+    font-size: 15pt;
+}
+
+.select {
+    margin: 10px;
+}
+
+table {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.imgtable {
+    width: 150px;
+    height: auto;
+}
+
+.imgtable:hover{
+    transform: scale(1.1);
+   
+}
+
+th {
+    background-color: rgb(212, 90, 19);
+    color: white;
+}
+
+table,
+th,
+td {
+    border: 3px solid rgb(197, 93, 93);
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: coral;
+}
+
+/*partie page contact*/
+
+.br-contact {
+    margin-bottom: 30px;
+}
+
+/*Media queries pour le responsive*/
+@media screen and (max-width:430px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .entete {
+        flex-direction: column;
+    }
+
+
+    #labelindex {
+        font-size: 1.5rem;
+    }
+
+    tr:hover {
+        color: none;
+    }
+    table{
+        width: auto;
+    }
+}
