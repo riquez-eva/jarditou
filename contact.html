@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Jarditou accueil</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 </head>
 
@@ -14,19 +15,19 @@
             <img id="logojarditou" src="src/img/jarditou_logo.jpg" alt="logo Jarditou" title="logo jarditou">
             <p id="labelindex">Tout le jardin</p>
         </div>
-        <nav class="nav">
-            <section class="section-nav">
-                <ul class="link">
-                    <li class="link-accueil"><a href="index.html">Accueil </a></li>
-                    <li class="link-accueil"><a href="tableaux.html">tableau </a></li>
-                    <li class="link-accueil"><a href="contact.html">Formulaire </a></li>
-                </ul>
-            </section>
-
-        </nav>
     </header>
+    <nav class="nav">
+        <section class="section-nav">
+            <ul class="link">
+                <li class="link-accueil"><a href="index.html">Accueil </a></li>
+                <li class="link-accueil"><a href="tableaux.html">Tableau </a></li>
+                <li class="link-accueil"><a href="contact.html">Formulaire </a></li>
+            </ul>
+        </section>
 
-    <label class="labelform">*Ces zones sont obligatoires</label>
+    </nav>
+
+    <p class="labelform">*Ces zones sont obligatoires</p>
     <p class="br-contact">
         <br>
     </p>
@@ -34,20 +35,20 @@
             <div class="bloc-coordonnees">
                 <fieldset class="fieldset">
                     <legend>Vos coordonnées</legend>
-                    <label class="labelform" for="nom">Votre nom*: </label>
-                    <input type="text" name="nom" id="nom" required><br>
+                    <label class="labelform" for="nom" >Votre nom*: </label>
+                    <input type="text" name="nom" id="nom" autocomplete="family-name" required><br>
                     <label class="labelform" for="prenom">Votre prénom*: </label>
-                    <input type="text" name="prenom" id="prenom" required><br>
+                    <input type="text" name="prenom" id="prenom" autocomplete="name" required><br>
                     <br>
                     <label class="labelform" for="sexe">Sexe*: </label>
-                    <input type="radio" name="sexe" value="Féminin" id="sexe">Féminin
-                    <input type="radio" name="sexe" value="Masculin" required>Masculin<br>
+                    <input type="radio" name="sexe" value="Féminin" id="sexe" autocomplete="sex">Féminin
+                    <input type="radio" name="sexe" value="Masculin" autocomplete="sex" required>Masculin<br>
                     <br>
                     <label class="labelform" for="date">Date de naissance*: </label>
-                    <input type="date" name="ddn" id="date" required><br>
+                    <input type="date" name="ddn" id="date" autocomplete="bday" required><br>
                     <label class="labelform" for="code_postal">Code Postal*: </label>
-                    <input type="text" name="code_postal" id="code_postal" required><br>
-                    <label class="labelform" for="adresse">Adresse: </label>
+                    <input type="text" name="code_postal" id="code_postal" autocomplete="address-level1" required><br>
+                    <label class="labelform" for="adresse" aut>Adresse: </label>
                     <input type="text" name="adresse" id="adresse"><br>
                     <label class="labelform" for="ville">Ville: </label>
                     <input type="text" name="ville" id="ville"><br>
@@ -82,8 +83,8 @@
             <label class="labelform" for="cookies">*J'accepte le
                 traitement informatique de ce formulaire</label><br>
             <br>
-            <button id="btn" type="submit">Envoyer</button><button id="btn" type="reset">Annuler</button>
-    </form>
+        </form>
+        <button id="btn" type="submit">Envoyer</button><button id="btn" type="reset">Annuler</button>
 
     <footer>
         <hr>
