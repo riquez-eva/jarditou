@@ -1,214 +1,261 @@
 * {
-    font-family: system-ui;
+  font-family: system-ui;
+  font-size: 1rem;
 }
 
 #logojarditou {
-    width: 300px;
-    margin: auto;
-    transition: transform ease-in-out .5s;
+  width: 300px;
+  margin: auto;
+  transition: transform ease-in-out 0.5s;
 }
 
 #logojarditou:hover {
-    transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
 }
 
 .entete {
-    display: flex;
-    margin: auto;
+  display: flex;
+  margin: auto;
 }
 
 #labelindex {
-    flex: 1;
-    font-size: 2rem;
-    text-align: center;
+  flex: 1;
+  font-size: 2rem;
+  text-align: center;
 }
 
 ul {
-    list-style: none;
-    background-color: black;
-    padding: 30px;
-    margin-bottom: 5px;
-    gap: 10px;
+  list-style: none;
+  background-color: black;
+  padding: 30px;
+  margin-bottom: 5px;
+  gap: 10px;
 }
 
 a {
-    color: white;
+  color: white;
 }
 
 .link-accueil:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .link {
-    display: flex;
+  display: flex;
 }
 
 .nav {
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    transition: margin-right 1s;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: margin-right 1s;
 }
 
 /*test des transitions et animations*/
 .nav:hover {
-    margin-right: 50%;
+  margin-right: 50%;
 }
 
 /*img promotion jarditou*/
 #cat {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #accueil {
-    display: flex;
-
+  display: flex;
 }
 
 main {
-    display: flex;
-    flex: 2;
+  display: flex;
+  flex: 2;
 }
 
 #bloc1 {
-    display: block;
+  display: block;
 }
 
 #aside {
-    display: flex;
-    flex: 1;
-    background-color: rgb(182, 179, 179);
-    float: right;
-    margin-bottom: 5px;
+  flex: 1;
+  background-color: rgb(182, 179, 179);
+  float: right;
+  margin-bottom: 5px;
 }
 
 .footer {
-    list-style: none;
-    background-color: black;
-    transform: margin;
+  list-style: none;
+  background-color: black;
+  transform: margin;
 }
 
 .fieldset {
-    background-color: rgb(233, 212, 184);
-    font-size: 12pt;
-    justify-content: center;
-    width: 50%;
-    margin: auto;
+  background-color: rgb(233, 212, 184);
+  box-shadow: 10px 5px 5px rgb(221, 220, 220);
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  border-radius: 5%;
 }
 
 .bloc-coordonnées {
-    display: block;
-    float: left;
-    width: 60%;
-}
-
-.bloc-votre-demande {
-    display: inline;
-    margin-left: 60%;
+  display: block;
+  float: left;
 }
 
 #btn {
-    display: flex;
-    margin: 5px;
-    background-color: antiquewhite;
-    margin-left: 50%;
+  font-size: 1.4rem;
+  background-color: antiquewhite;
+  transition: border-radius 1ms;
 }
 
 #btn:hover {
-    background-color: rgb(206, 152, 71);
+  background-color: rgb(252, 185, 158);
+  border-radius: 15%;
 }
-
-.labelform {
+.btn-bloc {
+  display: flex;
+  justify-content: space-around;
+}
+/*.labelform {
     font-size: 15pt;
-}
+}*/
 
 input {
-    margin: 10px;
+  margin: 10px;
 }
 
-legend {
+/*legend {
     font-size: 15pt;
 }
 
 button {
     font-size: 15pt;
-}
+}*/
 
 .select {
-    margin: 10px;
+  margin: 10px;
 }
-thead{
-    font-style: oblique;
+thead {
+  font-style: oblique;
+}
+
+#bloc-tableau {
+  justify-content: center;
+  margin: 50px;
 }
 table {
-    text-align: center;
-    width: 60%;
-    margin: auto;
+  text-align: center;
+  width: 60%;
 }
 
 .imgtable {
-    width: 150px;
-    height: auto;
-    transition: linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%) .5s;
+  width: 10rem;
+  height: auto;
+  transition: linear(
+      0 0%,
+      0 2.27%,
+      0.02 4.53%,
+      0.04 6.8%,
+      0.06 9.07%,
+      0.1 11.33%,
+      0.14 13.6%,
+      0.25 18.15%,
+      0.39 22.7%,
+      0.56 27.25%,
+      0.77 31.8%,
+      1 36.35%,
+      0.89 40.9%,
+      0.85 43.18%,
+      0.81 45.45%,
+      0.79 47.72%,
+      0.77 50%,
+      0.75 52.27%,
+      0.75 54.55%,
+      0.75 56.82%,
+      0.77 59.1%,
+      0.79 61.38%,
+      0.81 63.65%,
+      0.85 65.93%,
+      0.89 68.2%,
+      1 72.7%,
+      0.97 74.98%,
+      0.95 77.25%,
+      0.94 79.53%,
+      0.94 81.8%,
+      0.94 84.08%,
+      0.95 86.35%,
+      0.97 88.63%,
+      1 90.9%,
+      0.99 93.18%,
+      0.98 95.45%,
+      0.99 97.73%,
+      1 100%
+    )
+    0.5s;
 }
 
 .imgtable:hover {
-    transform: scale(1.1)rotate(10deg);
+  transform: scale(1.1) rotate(10deg);
 }
 
 th {
-    background-color: rgb(212, 90, 19);
-    color: white;
+  background-color: rgb(212, 90, 19);
+  color: white;
 }
 
 table,
 th,
 td {
-    border: 3px solid rgb(197, 93, 93);
-    border-collapse: collapse;
+  border: 3px solid rgb(197, 93, 93);
+  border-collapse: collapse;
 }
 
 tr:hover {
-    background-color: coral;
+  background-color: coral;
 }
 
 /*partie page contact*/
 
 .br-contact {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-/*Media queries pour le responsive Iphone14Promax*/
-@media screen and (max-width:430px) {
+/*Media queries pour le responsive*/
+@media screen and (max-width: 530px) {
+  .main-accueil {
+    flex-direction: column;
+  }
 
-    main {
-        flex-direction: column;
-    }
+  .entete {
+    flex-direction: column;
+  }
 
-    .entete {
-        flex-direction: column;
-    }
+  .link {
+    justify-content: center;
+  }
+  .nav:hover {
+    transition: none;
+    margin-right: 0%;
+  }
+  #labelindex {
+    font-size: 1.5rem;
+  }
 
-    .link{
-        justify-content: center;
-    }
-    .nav:hover {
-        transition: none;
-        margin-right: 0%;
-    }
-    #labelindex {
-        font-size: 1.5rem;
-    }
+  #votre_question {
+    width: 200px;
+    height: 100px;
+  }
+  table {
+    height: fit-content;
+    width: fit-content;
+  }
 
-    #votre_question{
-        width: 200px;
-        height: 100px;
-    }
-    table {
-        width: 80%;
-        height: fit-content;
-        font-size: 0.8rem;
-    }
+  table td {
+    font-size: 0.8rem;
+  }
+  .imgtable {
+    width: 6rem;
+    height: auto;
+  }
 }

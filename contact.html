@@ -1,99 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Jarditou accueil</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <div class="entete">
-            <img id="logojarditou" src="src/img/jarditou_logo.jpg" alt="logo Jarditou" title="logo jarditou">
-            <p id="labelindex">Tout le jardin</p>
-        </div>
+      <div class="entete">
+        <img
+          id="logojarditou"
+          src="src/img/jarditou_logo.jpg"
+          alt="logo Jarditou"
+          title="logo jarditou"
+        />
+        <p id="labelindex">Tout le jardin</p>
+      </div>
     </header>
     <nav class="nav">
-        <section class="section-nav">
-            <ul class="link">
-                <li class="link-accueil"><a href="index.html">Accueil </a></li>
-                <li class="link-accueil"><a href="tableaux.html">Tableau </a></li>
-                <li class="link-accueil"><a href="contact.html">Formulaire </a></li>
-            </ul>
-        </section>
-
+      <section class="section-nav">
+        <ul class="link">
+          <li class="link-accueil"><a href="index.html">Accueil </a></li>
+          <li class="link-accueil"><a href="tableaux.html">Tableau </a></li>
+          <li class="link-accueil"><a href="contact.html">Formulaire </a></li>
+        </ul>
+      </section>
     </nav>
 
     <p class="labelform">*Ces zones sont obligatoires</p>
     <p class="br-contact">
-        <br>
+      <br />
     </p>
     <form action="http://bienvu.net/script.php" method="post">
-            <div class="bloc-coordonnees">
-                <fieldset class="fieldset">
-                    <legend>Vos coordonnées</legend>
-                    <label class="labelform" for="nom" >Votre nom*: </label>
-                    <input type="text" name="nom" id="nom" autocomplete="family-name" required><br>
-                    <label class="labelform" for="prenom">Votre prénom*: </label>
-                    <input type="text" name="prenom" id="prenom" autocomplete="name" required><br>
-                    <br>
-                    <label class="labelform" for="sexe">Sexe*: </label>
-                    <input type="radio" name="sexe" value="Féminin" id="sexe" autocomplete="sex">Féminin
-                    <input type="radio" name="sexe" value="Masculin" autocomplete="sex" required>Masculin<br>
-                    <br>
-                    <label class="labelform" for="date">Date de naissance*: </label>
-                    <input type="date" name="ddn" id="date" autocomplete="bday" required><br>
-                    <label class="labelform" for="code_postal">Code Postal*: </label>
-                    <input type="text" name="code_postal" id="code_postal" autocomplete="address-level1" required><br>
-                    <label class="labelform" for="adresse" aut>Adresse: </label>
-                    <input type="text" name="adresse" id="adresse"><br>
-                    <label class="labelform" for="ville">Ville: </label>
-                    <input type="text" name="ville" id="ville"><br>
-                    <label class="labelform" for="email">Email*: </label>
-                    <input type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" required><br>
-                </fieldset>
-            </div>
-            <p>
-                <br class="br-contact">
-            </p>
-            <div class="bloc-votre-demande">
-                <fieldset class="fieldset">
-                    <legend>Votre demande</legend>
-                    <label class="labelform" for="sujet">Sujet*: </label>
-                    <select class="select" id="sujet" size="1" required>
-                        <option value="">veuillez sélectionner un sujet</option>
-                        <option value="mes commandes">Mes commandes</option>
-                        <option value="questions sur un produit">Questions sur un produit</option>
-                        <option value="reclamation">Réclamation</option>
-                        <option value="autre">Autre</option>
-                    </select>
-                    <br>
-                    <label class="labelform" for="votre_question">Votre question*: </label><textarea class="select"
-                        name="commentaire" id="votre_question" required></textarea>
-                    <br>
-                </fieldset>
-            </div>
-            <p class="br-contact">
-                <br>
-            </p>
-            <input type="checkbox" name="cookies" value="j'accepte" id="cookies" required>
-            <label class="labelform" for="cookies">*J'accepte le
-                traitement informatique de ce formulaire</label><br>
-            <br>
-        </form>
-        <button id="btn" type="submit">Envoyer</button><button id="btn" type="reset">Annuler</button>
-
+      <div class="bloc-coordonnees">
+        <fieldset class="fieldset">
+          <legend>Vos coordonnées</legend>
+          <label class="labelform" for="nom">Votre nom*: </label>
+          <input
+            type="text"
+            name="nom"
+            id="nom"
+            autocomplete="family-name"
+            required
+          /><br />
+          <label class="labelform" for="prenom">Votre prénom*: </label>
+          <input
+            type="text"
+            name="prenom"
+            id="prenom"
+            autocomplete="name"
+            required
+          /><br />
+          <br />
+          <label class="labelform" for="sexe">Sexe*: </label>
+          <input
+            type="radio"
+            name="sexe"
+            value="Féminin"
+            id="sexe"
+            autocomplete="sex"
+          />Féminin
+          <input
+            type="radio"
+            name="sexe"
+            value="Masculin"
+            autocomplete="sex"
+            required
+          />Masculin<br />
+          <br />
+          <label class="labelform" for="date">Date de naissance*: </label>
+          <input type="date" name="ddn" id="date" required /><br />
+          <label class="labelform" for="code_postal">Code Postal*: </label>
+          <input
+            type="text"
+            name="code_postal"
+            id="code_postal"
+            autocomplete="address-level1"
+            required
+          /><br />
+          <label class="labelform" for="adresse">Adresse: </label>
+          <input type="text" name="adresse" id="adresse" /><br />
+          <label class="labelform" for="ville">Ville: </label>
+          <input type="text" name="ville" id="ville" /><br />
+          <label class="labelform" for="email">Email*: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            placeholder="dave.loper@afpa.fr"
+            required
+          /><br />
+        </fieldset>
+      </div>
+      <p>
+        <br class="br-contact" />
+      </p>
+      <div>
+        <fieldset class="fieldset">
+          <legend>Votre demande</legend>
+          <label class="labelform" for="sujet">Sujet*: </label>
+          <select class="select" id="sujet" size="1" required>
+            <option value="">veuillez sélectionner un sujet</option>
+            <option value="mes commandes">Mes commandes</option>
+            <option value="questions sur un produit">
+              Questions sur un produit
+            </option>
+            <option value="reclamation">Réclamation</option>
+            <option value="autre">Autre</option>
+          </select>
+          <br />
+          <label class="labelform" for="votre_question">Votre question*: </label
+          ><textarea
+            class="select"
+            name="commentaire"
+            id="votre_question"
+            required
+          ></textarea>
+          <br />
+        </fieldset>
+      </div>
+      <p class="br-contact">
+        <br />
+      </p>
+      <input
+        type="checkbox"
+        name="cookies"
+        value="j'accepte"
+        id="cookies"
+        required
+      />
+      <label class="labelform" for="cookies"
+        >*J'accepte le traitement informatique de ce formulaire</label
+      ><br />
+      <br />
+    </form>
+    <div class="btn-bloc">
+      <button id="btn" type="submit">Envoyer</button
+      ><button id="btn" type="reset">Annuler</button>
+    </div>
     <footer>
-        <hr>
-        <ul class="link">
-            <li><a href="index.html">Mentions légales</a></li>
-            <li><a href="index.html">Horaires</a></li>
-            <li><a href="index.html">Plan du site</a></li>
-        </ul>
+      <hr />
+      <ul class="link">
+        <li><a href="index.html">Mentions légales</a></li>
+        <li><a href="index.html">Horaires</a></li>
+        <li><a href="index.html">Plan du site</a></li>
+      </ul>
     </footer>
-</body>
-
+  </body>
 </html>
